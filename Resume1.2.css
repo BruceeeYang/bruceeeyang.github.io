@@ -1,0 +1,1211 @@
+@charset "utf-8";
+/* 簡單流變媒體
+   注意: 流變媒體要求您必須移除 HTML 中媒體的高度和寬度屬性
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 不支援最大寬度，因此寬度預設為 100% */
+.ie6 img {
+	width:100%;
+}
+
+
+
+/* 表格版面: 481px 到 750px。 */
+
+@media only screen and (min-width: 480px) {
+
+    body{
+        padding: 50px;
+        background-color: rgb(27, 25, 75);
+        color: LightGray;
+        font-size: 15px;
+        line-height: 28px;
+        letter-spacing: 1px;
+        font-family: "微軟正黑體",sans-serif;
+        justify-content: center; 
+        display: flex;
+    }
+    
+    /* --------------------------- */
+    .name,.jobName{
+    
+        color: LightGray;;
+        font-weight: 700;
+    }
+    
+    .jobName{
+        font-size: 17px;
+        font-weight: bold;
+        margin-top: 23px;
+    }
+    
+    .introduction{
+        color: LightGray;;
+    }
+    /* 
+    .nameDecoration{
+        width: 200px;
+        height: 200px;
+    } */
+    
+    .introduction{
+        font-weight: bolder;
+    }
+    
+    h1{
+        margin-bottom: 6px;
+    }
+    
+    .nikeName{
+        font-size: 21px;
+    }
+    
+    .jobNikename{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    .phone_englishjobname{
+        display: none;
+    }
+    
+    h1,h4{
+        color: LightGray;
+    }
+    
+    hr{
+        border: none;
+        border-bottom: 4px solid rgb(185, 140, 25);
+        width: 40%;
+        margin-left: 0px;
+    }
+    
+    /* .subbackground{
+        background-color: rgb(212, 186, 235);
+        border-radius: 10px;
+        padding: 5px;
+        padding-left: 10px;
+        padding-bottom: 2px;
+        margin-bottom: 20px;
+    } */
+    
+    ul{ 
+        padding: 0px;
+        list-style: none;
+    }
+    
+    h4{
+        margin-top: 0px;
+    }
+    
+    .btn{
+        border:3px  solid  rgb(185, 140, 25);
+        padding: 5px 20px;
+        margin-right: 10px;
+        background-color: rgb(185, 140, 25);
+        color: rgb(15, 41, 75);
+        border-radius: 5px;
+    }
+    
+    .btn:hover{
+        background-color: rgba(255, 181, 44, 0.877);
+        border:3px  solid  rgba(255, 181, 44, 0.877);
+        text-decoration: underline;
+    }
+    
+    a{
+        text-decoration: none;
+        font-weight: 800;
+    }
+    
+    h2{
+        margin: 0px;
+        margin-top: 40px;
+        opacity: 0.9;
+        font-weight: bolder;
+    }
+    
+    h2::after{
+        content: "";
+        display: inline-block;
+        width:20px ;
+        height: 8px;
+        background-color: rgb(185, 140, 25);
+        margin-left: 10px;
+    }
+    
+    .subtitle{
+        margin: 0px;
+        margin-bottom: 25px;
+        font-weight: bold;
+        opacity: 0.7;
+        margin-left: 35px;
+        font-size: 14px;
+    }
+    
+    .resume{
+        display: flex;
+        max-width: 950px;
+        border: solid 7px LightGray;
+        border-radius: 5px;
+        padding: 45px;
+        position: relative
+    }
+    
+    .left{
+        flex: 5;
+        padding-right: 60px ;
+        border-right: solid 1px rgb(185, 140, 25);
+    }
+    
+    .right{
+        flex: 7;
+        padding-left: 65px;
+        padding-top: 200px;
+        padding-right: 20px;
+    }
+    
+    .left,.right{
+        /* padding: 15px; */
+    }
+    
+    
+    
+    /* list skill */
+    .listSkill{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .listSkill li{
+        width: 50%;
+        padding: 5px;
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .circle{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        background-color: rgba(139,105,20,0.7);
+    }
+    
+    .circle::after{
+        content: "";
+        display: block;
+        background-color:rgb(27, 25, 75);
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        border-radius: 50%;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .p90,.p180,.p270,.p360{
+        width: 50%;
+        height: 50%;
+        position:absolute;
+        left:50%;
+        top:0px;
+        background-color:rgb(185, 140, 25);
+    }
+    
+    .p180{
+        top: 50%;
+    }
+    
+    .p270{
+        left: 0px;
+        top: 50%;
+    }
+    
+    
+    /* ------------------list program------------------ */
+    .language{
+        margin-top: 10px;
+    }
+    
+    
+    .listProgram .bar{
+        width: 150px;
+        height: 9px;
+        border: solid 2px rgb(185, 140, 25);
+        border-radius: 5px;
+        padding-right: 65px;
+        margin-left: 15px;
+    }
+    
+    
+    .listProgram li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 40px;
+        padding-top: 10px;
+        margin-top: -5px;
+    }
+    
+    .value{
+        height: 100%;
+        width: 80%;
+        background-color: rgb(205, 133, 0);
+    }
+    
+    .value.p80{
+        width: 120%;
+    }
+    
+    .value.p70{
+        width:110%;
+    }
+    
+    .value.p60{
+        width: 100%;
+    }
+    
+    .value.p50{
+        width: 90%;
+    }
+    
+    /* -----------------contact------------------ */
+    .contact li{
+        margin-bottom: 10px;
+    }
+    
+    .contact{
+        margin-left: 40px;
+    }
+    
+    .contantTitle{
+        margin-top: 80px;
+    }
+    
+    .contactImg{
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+    
+    /* -------------Photo---------------- */
+    .photo{
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        right: 85px;
+        top: 35px;
+        border: 2px solid rgba(29, 26, 112, 0.877);
+        box-shadow: 0 0 5px 5px rgba(29, 26, 112, 0.877);
+        border-radius: 50%;
+    }
+    
+    /* -----------------Education--------------- */
+    
+    /* ----------------Experience----------------- */
+    
+    .listExperience>li{
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .listExperience li ul{
+        padding-left: 10px;
+        margin-left: 10px;
+        border-left: solid 4px LightGray;
+    }
+    
+    .listExperience>li:nth-child(1) ul{
+        border-color: rgb(205, 133, 0);
+    }
+    .listExperience>li:nth-child(2) ul{
+        border-color: rgb(185, 140, 25);
+    }
+    .listExperience>li:nth-child(3) ul{
+        border-color: rgb(238, 221 ,130)
+    }
+    
+    .position{
+        padding-left:35px;
+        margin: 0px;
+    }
+    
+    .period{
+        padding-left: 70px;
+    }
+    
+    /* .position::before{
+        content: "";
+        display: inline;
+        background-color: transparent;
+        width: 0px;
+        border: 7px solid transparent;
+        border-left-color:  LightGray;
+        margin: 0px;
+        margin-right: 12px;
+        margin-left: 18px;
+    } */
+    
+    
+    
+    /* ------------Participation Projec----------- */
+    
+    .company::before{
+        content: "";
+        display: inline-block;
+        background-color: transparent;
+        width: 0px;
+        border: 7px solid transparent;
+        border-left-color:  LightGray;
+        margin: 0px;
+        margin-right: 12px;
+        margin-left: 18px;
+    }
+    
+    .company{
+        padding:3px 0;
+        /* line-height: 5px; */
+    }
+    
+    .company a{
+        color:  LightGray;
+    
+    }
+    
+    .company a:hover{
+        text-decoration: underline;
+    
+    }
+    
+    
+    
+    /* .arrow{
+        display: inline;
+        background-color: transparent;
+        width: 0px;
+        border: 10px solid transparent;
+        border-top-color: rgba(139,105,20,0.7);
+        margin: 0px;
+        margin-top: 5px;
+    } */
+    
+    /* ---------------decoration------------------ */
+    .decoration{
+        width: 300px;
+        height: 45px;
+        background: linear-gradient(90deg,rgb(185, 140, 25),LightGray);
+        border-radius: 40px 0 0 40px;
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+    }
+    
+    
+    /* -------------------copyright------------------- */
+    .copyright{
+        font-size: 8px;
+        position: absolute;
+        right: 0px;
+        bottom: 25px;
+    }
+
+
+    .phone_block{
+        display: none;
+    }
+
+}
+
+
+/* 桌面版面:  */
+
+@media only screen and (min-width: 750px) {
+  
+    body{
+        padding: 50px;
+        background-color: rgb(27, 25, 75);
+        color: LightGray;
+        font-size: 15px;
+        line-height: 28px;
+        letter-spacing: 1px;
+        font-family: "微軟正黑體",sans-serif;
+        justify-content: center; 
+        display: flex;
+    }
+    
+    /* --------------------------- */
+    .name,.jobName{
+    
+        color: LightGray;;
+        font-weight: 700;
+    }
+    
+    .jobName{
+        font-size: 17px;
+        font-weight: bold;
+        margin-top: 23px;
+    }
+    
+    .introduction{
+        color: LightGray;;
+    }
+    /* 
+    .nameDecoration{
+        width: 200px;
+        height: 200px;
+    } */
+    
+    .introduction{
+        font-weight: bolder;
+    }
+    
+    h1{
+        margin-bottom: 6px;
+    }
+    
+    .nikeName{
+        font-size: 21px;
+    }
+    
+    .jobNikename{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    .phone_englishjobname{
+        display: none;
+    }
+    
+    h1,h4{
+        color: LightGray;
+    }
+    
+    hr{
+        border: none;
+        border-bottom: 4px solid rgb(185, 140, 25);
+        width: 40%;
+        margin-left: 0px;
+    }
+    
+    /* .subbackground{
+        background-color: rgb(212, 186, 235);
+        border-radius: 10px;
+        padding: 5px;
+        padding-left: 10px;
+        padding-bottom: 2px;
+        margin-bottom: 20px;
+    } */
+    
+    ul{ 
+        padding: 0px;
+        list-style: none;
+    }
+    
+    h4{
+        margin-top: 0px;
+    }
+    
+    .btn{
+        border:3px  solid  rgb(185, 140, 25);
+        padding: 5px 20px;
+        margin-right: 10px;
+        background-color: rgb(185, 140, 25);
+        color: rgb(15, 41, 75);
+        border-radius: 5px;
+    }
+    
+    .btn:hover{
+        background-color: rgba(255, 181, 44, 0.877);
+        border:3px  solid  rgba(255, 181, 44, 0.877);
+        text-decoration: underline;
+    }
+    
+    a{
+        text-decoration: none;
+        font-weight: 800;
+    }
+    
+    h2{
+        margin: 0px;
+        margin-top: 40px;
+        opacity: 0.9;
+        font-weight: bolder;
+    }
+    
+    h2::after{
+        content: "";
+        display: inline-block;
+        width:20px ;
+        height: 8px;
+        background-color: rgb(185, 140, 25);
+        margin-left: 10px;
+    }
+    
+    .subtitle{
+        margin: 0px;
+        margin-bottom: 25px;
+        font-weight: bold;
+        opacity: 0.7;
+        margin-left: 35px;
+        font-size: 14px;
+    }
+    
+    .resume{
+        display: flex;
+        max-width: 550px;
+        border: solid 7px LightGray;
+        border-radius: 5px;
+        padding: 45px;
+        position: relative
+    }
+    
+    .left{
+        flex: 5;
+        padding-right: 60px ;
+        border-right: solid 1px rgb(185, 140, 25);
+    }
+    
+    .right{
+        flex: 5;
+        padding-left: 65px;
+        padding-top: 200px;
+        padding-right: 20px;
+    }
+    
+    .left,.right{
+        /* padding: 15px; */
+    }
+    
+    
+    
+    /* list skill */
+    .listSkill{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .listSkill li{
+        width: 50%;
+        padding: 5px;
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .circle{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        background-color: rgba(139,105,20,0.7);
+    }
+    
+    .circle::after{
+        content: "";
+        display: block;
+        background-color:rgb(27, 25, 75);
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        border-radius: 50%;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .p90,.p180,.p270,.p360{
+        width: 50%;
+        height: 50%;
+        position:absolute;
+        left:50%;
+        top:0px;
+        background-color:rgb(185, 140, 25);
+    }
+    
+    .p180{
+        top: 50%;
+    }
+    
+    .p270{
+        left: 0px;
+        top: 50%;
+    }
+    
+    
+    /* ------------------list program------------------ */
+    .language{
+        margin-top: 10px;
+    }
+    
+    
+    .listProgram .bar{
+        width: 150px;
+        height: 15px;
+        border: solid 2px rgb(185, 140, 25);
+        border-radius: 5px;
+        padding-right: 65px;
+        margin-left: 15px;
+    }
+    
+    
+    .listProgram li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 40px;
+        padding-top: 10px;
+        margin-top: -10px;
+    }
+    
+    .value{
+        height: 100%;
+        width: 80%;
+        background-color: rgb(205, 133, 0);
+    }
+    
+    .value.p80{
+        width: 120%;
+    }
+    
+    .value.p70{
+        width:110%;
+    }
+    
+    .value.p60{
+        width: 100%;
+    }
+    
+    .value.p50{
+        width: 90%;
+    }
+    
+    /* -----------------contact------------------ */
+    .contact li{
+        margin-bottom: 10px;
+    }
+    
+    .contact{
+        margin-left: 40px;
+    }
+    
+    .contantTitle{
+        margin-top: 80px;
+    }
+    
+    .contactImg{
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+
+    .contactLink:link{
+        color: LightGray;
+        margin-left: 5px;
+    }
+
+    .contactLink:visited{
+        color: rgb(185, 140, 25);
+    }
+
+    /* -------------Photo---------------- */
+    .photo{
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        right: 85px;
+        top: 35px;
+        border: 2px solid rgba(29, 26, 112, 0.877);
+        box-shadow: 0 0 5px 5px rgba(29, 26, 112, 0.877);
+        border-radius: 50%;
+    }
+    
+    /* -----------------Education--------------- */
+    
+    /* ----------------Experience----------------- */
+    
+    .listExperience>li{
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .listExperience li ul{
+        padding-left: 10px;
+        margin-left: 10px;
+        border-left: solid 4px LightGray;
+    }
+    
+    .listExperience>li:nth-child(1) ul{
+        border-color: rgb(205, 133, 0);
+    }
+    .listExperience>li:nth-child(2) ul{
+        border-color: rgb(185, 140, 25);
+    }
+    .listExperience>li:nth-child(3) ul{
+        border-color: rgb(238, 221 ,130)
+    }
+    
+    .position{
+        padding-left:35px;
+        margin: 0px;
+    }
+    
+    .period{
+        padding-left: 70px;
+    }
+    
+    /* .position::before{
+        content: "";
+        display: inline;
+        background-color: transparent;
+        width: 0px;
+        border: 7px solid transparent;
+        border-left-color:  LightGray;
+        margin: 0px;
+        margin-right: 12px;
+        margin-left: 18px;
+    } */
+    
+    
+    
+    /* ------------Participation Projec----------- */
+    
+    .company::before{
+        content: "";
+        display: inline-block;
+        background-color: transparent;
+        width: 0px;
+        border: 7px solid transparent;
+        border-left-color:  LightGray;
+        margin: 0px;
+        margin-right: 12px;
+        margin-left: 18px;
+    }
+    
+    .company{
+        padding:3px 0;
+        /* line-height: 5px; */
+    }
+    
+    .company a{
+        color:  LightGray;
+    
+    }
+    
+    .company a:hover{
+        text-decoration: underline;
+    }
+
+    .respensibility{
+        margin-left: 125px;
+        margin-top: -5px;
+    }
+    
+    
+    
+    /* .arrow{
+        display: inline;
+        background-color: transparent;
+        width: 0px;
+        border: 10px solid transparent;
+        border-top-color: rgba(139,105,20,0.7);
+        margin: 0px;
+        margin-top: 5px;
+    } */
+    
+    /* ---------------decoration------------------ */
+    .decoration{
+        width: 300px;
+        height: 50px;
+        background: linear-gradient(90deg,rgb(185, 140, 25),LightGray);
+        border-radius: 40px 0 0 40px;
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+    }
+    /* ----------thankYou--------- */
+
+    .thankYou{
+        width: 240px;
+        margin-left: 40px;
+        margin-top: 8px;
+        font-size: 45px;
+        color: rgb(27, 25, 75);
+    }
+    
+    /* -------------------copyright------------------- */
+    .copyright{
+        font-size: 8px;
+        position: absolute;
+        right: 0px;
+        bottom: 25px;
+    }
+
+
+    .phone_block{
+        display: none;
+    }
+
+}
+
+
+/* 行動版面: 480px 以下。 */
+@media only screen and (max-width: 480px) {
+    body{
+        padding: 20px;
+        background-color: rgb(27, 25, 75);
+        color: LightGray;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1px;
+        font-family: sans-serif, "微軟正黑體";
+    }
+
+    .block{
+        display: none;
+    }
+
+    .resume{
+        max-width: 450px;
+        border: solid 4px LightGray;
+        border-radius: 5px;
+        padding: 12px;
+        position: relative;
+        margin: auto;
+    }
+    
+    .photo{
+        position: absolute;
+        right: 15px;
+        top:15px;
+        width: 120px;
+        height: 120px;
+        border: 1px solid rgba(29, 26, 112, 0.877);
+        box-shadow: 0 0 3px 3px rgba(29, 26, 112, 0.877);
+        border-radius: 50%;
+    }
+
+    .phone_name{
+        margin-top: 12px;
+        font-size: 20px;
+        margin-bottom: 1px;
+    }
+
+    .phone_englishname{
+        font-size: 14px;
+        margin-left: -6px;
+    }
+
+    .phone_hr{
+        width: 45%;
+        margin-left: 0px;
+        border: none;
+        border-bottom: 2px solid rgb(185, 140, 25);
+    }
+
+    .phone_jobname{
+        font-size: 14px;
+        margin-bottom: 0px;
+        margin-top: 2px;
+    }
+
+    .phone_jobenglishname{
+        font-size: 12px;
+    }
+
+    .jobNikename{
+        display: none;
+    }
+
+    .phone_englishjobname{
+        font-size: 10px;
+        margin-top: 0px;
+    }
+
+    .btn{
+        border:2px  solid  rgb(185, 140, 25);
+        padding: 3px 12px;
+        margin-right: 10px;
+        background-color: rgb(185, 140, 25);
+        color: rgb(15, 41, 75);
+        border-radius: 5px;
+        font-size: 13px;
+    }
+
+    .btn:link{
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .phone_introduction{
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    ul li{
+        list-style: none;
+    }
+
+    /* -----------phone_block--------- */
+    /* ----------Education/Experience------- */
+   h2{
+       font-size: 20px;
+       margin-bottom: 1px;
+       margin-top: 40px;
+   }
+
+   h2::after{
+        content: "";
+        display: inline-block;
+        width: 14px;
+        height: 6px;
+        background-color: rgb(185, 140, 25);
+        margin-left: 12px;
+        margin-bottom: 0px;
+   }
+
+   .phone_subtitle{
+       font-size: 12px;
+       margin-left: 40px;
+       margin-top: 0px;
+   }
+    
+   .phone_listExperience>li{
+        display: flex;
+        margin-bottom: 10px;
+        font-size: 14px;
+        margin-left: -25px;
+    }
+    .phone_listExperience li ul{
+        padding-left: 10px;
+        margin-left: 10px;
+        border-left: solid 2px LightGray;
+    }
+    
+    .phone_listExperience>li:nth-child(1) ul{
+        border-color: rgb(205, 133, 0);
+    }
+    .phone_listExperience>li:nth-child(2) ul{
+        border-color: rgb(185, 140, 25);
+    }
+    .phone_listExperience>li:nth-child(3) ul{
+        border-color: rgb(238, 221 ,130)
+    }
+
+    .phone_listExperience .period{
+
+        margin-left: 65px;
+    }
+
+    /* -------------Language--------------- */
+    .phone_language{
+        font-size: 16px;
+        margin-left: 13px;
+        margin-bottom: 5px;
+    }
+
+    .phone_englishlanguage{
+        font-size: 12px;
+    }
+
+    .phone_listProgram>li{
+        margin-bottom: 7px;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-left: -12px;
+        display: flex;
+        justify-content: space-between;  //
+        align-items: center;  //
+        
+    }
+
+    .phone_listProgram .phone_bar{
+        width: 65%;
+        height: 12px;
+        border: 2px solid rgb(185, 140, 25);
+        border-radius: 8px;
+        margin-top: 5px;
+    }
+
+    .phone_bar>.value{
+        height: 100%;
+        width: 100px;
+        border: 1px solid rgb(185, 140, 25);
+        background-color: rgb(185, 140, 25);
+        border-radius: 2px 1px 1px 2px;
+        box-sizing: border-box;
+        margin-left: -1px
+    }
+
+    .phone_bar .phone_p60{
+        width: 70%;
+    }
+
+    .phone_bar .phone_p70{
+        width: 80%;
+    }
+
+    .phone_bar .phone_p80{
+        width: 90%;
+    }
+
+    /* ---------------Programming Skills--------------- */
+
+    .phone_listSkill{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -40px;
+    }
+
+    .phone_listSkill li{
+        width: 50%;
+        padding: 5px;
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column; /**/
+        align-items: center;
+        text-align: center;
+    }
+    
+    .circle{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        background-color: rgba(139,105,20,0.7);
+    }
+    
+    .circle::after{
+        content: "";
+        display: block;
+        background-color:rgb(27, 25, 75);
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        border-radius: 50%;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .p90,.p180,.p270,.p360{
+        width: 50%;
+        height: 50%;
+        position:absolute;
+        left:50%;
+        top:0px;
+        background-color:rgb(185, 140, 25);
+    }
+    
+    .p180{
+        top: 50%;
+    }
+    
+    .p270{
+        left: 0px;
+        top: 50%;
+    }  
+
+/* -------------Participation------------- */
+
+    .phone_company a{
+        color: LightGray;
+        text-decoration: none;
+    }
+
+    .phone_Project{
+        margin-left: -15px;
+    }
+
+    .phone_Project li{
+        margin-bottom: 10px;
+    }
+
+    .phone_respensibility{
+        margin-left: 65px;
+    }
+
+
+    /* -------------contact------------- */
+
+    .phone_contact{
+        margin-left: -15px;
+        margin-bottom: 40px;
+    }
+
+    .phone_contact li{
+        margin-bottom: 10px;
+        color: LightGray;
+        ,mstgin-bottmon:10px;
+    }
+
+    .phone_contact img{
+        vertical-align: middle;
+        margin-right: 5px;
+        margin-bottom: 20px;
+
+    }
+
+    .phone_contactLink{
+        color: LightGray;
+        margin-left: 5px;
+        text-decoration: none;
+    }
+
+    .phone_contactLink:visited{
+        color: rgb(185, 140, 25);
+    }
+
+    
+
+    /* --------------decoration---------------- */
+
+    .phone_decoration{
+        width: 200px;
+        height: 30px;
+        background: linear-gradient(90deg,LightGray,rgb(185, 140, 25));
+        border-radius: 0 40px 40px 0;
+        margin-left: -13px;
+        position: relative;
+        margin-bottom: 30px;
+
+    }
+
+    .thankYou{
+        display: none;
+    }
+    .phone_thankYou{
+        width: 130px;
+        font-size: 21px;
+        font-weight: bolder;
+        color: rgb(27, 25, 75);
+        margin-left: 35px;
+    }
+
+    /* ----------------copyright------------------ */
+
+    .copyright{
+        display: none;
+    }
+
+    .phone_copyright{
+        font-size: 11px;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    
+    
+
