@@ -11,420 +11,6 @@ img, object, embed, video {
 	width:100%;
 }
 
-
-
-/* 表格版面: 481px 到 750px。 */
-
-@media only screen and (min-width: 480px) {
-
-    body{
-        padding: 50px;
-        background-color: rgb(27, 25, 75);
-        color: LightGray;
-        font-size: 15px;
-        line-height: 28px;
-        letter-spacing: 1px;
-        font-family: "微軟正黑體",sans-serif;
-        justify-content: center; 
-        display: flex;
-    }
-    
-    /* --------------------------- */
-    .name,.jobName{
-    
-        color: LightGray;;
-        font-weight: 700;
-    }
-    
-    .jobName{
-        font-size: 17px;
-        font-weight: bold;
-        margin-top: 23px;
-    }
-    
-    .introduction{
-        color: LightGray;;
-    }
-    /* 
-    .nameDecoration{
-        width: 200px;
-        height: 200px;
-    } */
-    
-    .introduction{
-        font-weight: bolder;
-    }
-    
-    h1{
-        margin-bottom: 6px;
-    }
-    
-    .nikeName{
-        font-size: 21px;
-    }
-    
-    .jobNikename{
-        font-size: 15px;
-        margin-left: 10px;
-    }
-
-    .phone_englishjobname{
-        display: none;
-    }
-    
-    h1,h4{
-        color: LightGray;
-    }
-    
-    hr{
-        border: none;
-        border-bottom: 4px solid rgb(185, 140, 25);
-        width: 40%;
-        margin-left: 0px;
-    }
-    
-    /* .subbackground{
-        background-color: rgb(212, 186, 235);
-        border-radius: 10px;
-        padding: 5px;
-        padding-left: 10px;
-        padding-bottom: 2px;
-        margin-bottom: 20px;
-    } */
-    
-    ul{ 
-        padding: 0px;
-        list-style: none;
-    }
-    
-    h4{
-        margin-top: 0px;
-    }
-    
-    .btn{
-        border:3px  solid  rgb(185, 140, 25);
-        padding: 5px 20px;
-        margin-right: 10px;
-        background-color: rgb(185, 140, 25);
-        color: rgb(15, 41, 75);
-        border-radius: 5px;
-    }
-    
-    .btn:hover{
-        background-color: rgba(255, 181, 44, 0.877);
-        border:3px  solid  rgba(255, 181, 44, 0.877);
-        text-decoration: underline;
-    }
-    
-    a{
-        text-decoration: none;
-        font-weight: 800;
-    }
-    
-    h2{
-        margin: 0px;
-        margin-top: 40px;
-        opacity: 0.9;
-        font-weight: bolder;
-    }
-    
-    h2::after{
-        content: "";
-        display: inline-block;
-        width:20px ;
-        height: 8px;
-        background-color: rgb(185, 140, 25);
-        margin-left: 10px;
-    }
-    
-    .subtitle{
-        margin: 0px;
-        margin-bottom: 25px;
-        font-weight: bold;
-        opacity: 0.7;
-        margin-left: 35px;
-        font-size: 14px;
-    }
-    
-    .resume{
-        display: flex;
-        max-width: 950px;
-        border: solid 7px LightGray;
-        border-radius: 5px;
-        padding: 45px;
-        position: relative
-    }
-    
-    .left{
-        flex: 5;
-        padding-right: 60px ;
-        border-right: solid 1px rgb(185, 140, 25);
-    }
-    
-    .right{
-        flex: 5;
-        padding-left: 65px;
-        padding-top: 200px;
-        padding-right: 20px;
-    }
-    
-    .left,.right{
-        /* padding: 15px; */
-    }
-    
-    
-    
-    /* list skill */
-    .listSkill{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .listSkill li{
-        width: 50%;
-        padding: 5px;
-        margin: 0;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .circle{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        position: relative;
-        overflow: hidden;
-        background-color: rgba(139,105,20,0.7);
-    }
-    
-    .circle::after{
-        content: "";
-        display: block;
-        background-color:rgb(27, 25, 75);
-        width: calc(100% - 20px);
-        height: calc(100% - 20px);
-        border-radius: 50%;
-        position: relative;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-    }
-    
-    .p90,.p180,.p270,.p360{
-        width: 50%;
-        height: 50%;
-        position:absolute;
-        left:50%;
-        top:0px;
-        background-color:rgb(185, 140, 25);
-    }
-    
-    .p180{
-        top: 50%;
-    }
-    
-    .p270{
-        left: 0px;
-        top: 50%;
-    }
-    
-    
-    /* ------------------list program------------------ */
-    .language{
-        margin-top: 10px;
-    }
-    
-    
-    .listProgram .bar{
-        width: 150px;
-        height: 9px;
-        border: solid 2px rgb(185, 140, 25);
-        border-radius: 5px;
-        padding-right: 65px;
-        margin-left: 15px;
-    }
-    
-    
-    .listProgram li{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 40px;
-        padding-top: 10px;
-        margin-top: -5px;
-    }
-    
-    .value{
-        height: 100%;
-        width: 80%;
-        background-color: rgb(205, 133, 0);
-    }
-    
-    .value.p80{
-        width: 120%;
-    }
-    
-    .value.p70{
-        width:110%;
-    }
-    
-    .value.p60{
-        width: 100%;
-    }
-    
-    .value.p50{
-        width: 90%;
-    }
-    
-    /* -----------------contact------------------ */
-    .contact li{
-        margin-bottom: 10px;
-    }
-    
-    .contact{
-        margin-left: 40px;
-    }
-    
-    .contantTitle{
-        margin-top: 80px;
-    }
-    
-    .contactImg{
-        vertical-align: middle;
-        margin-right: 8px;
-    }
-    
-    /* -------------Photo---------------- */
-    .photo{
-        width: 250px;
-        height: 250px;
-        position: absolute;
-        right: 85px;
-        top: 35px;
-        border: 2px solid rgba(29, 26, 112, 0.877);
-        box-shadow: 0 0 5px 5px rgba(29, 26, 112, 0.877);
-        border-radius: 50%;
-    }
-    
-    /* -----------------Education--------------- */
-    
-    /* ----------------Experience----------------- */
-    
-    .listExperience>li{
-        display: flex;
-        margin-bottom: 10px;
-    }
-    .listExperience li ul{
-        padding-left: 10px;
-        margin-left: 10px;
-        border-left: solid 4px LightGray;
-    }
-    
-    .listExperience>li:nth-child(1) ul{
-        border-color: rgb(205, 133, 0);
-    }
-    .listExperience>li:nth-child(2) ul{
-        border-color: rgb(185, 140, 25);
-    }
-    .listExperience>li:nth-child(3) ul{
-        border-color: rgb(238, 221 ,130)
-    }
-    
-    .position{
-        padding-left:35px;
-        margin: 0px;
-    }
-    
-    .period{
-        padding-left: 70px;
-    }
-    
-    /* .position::before{
-        content: "";
-        display: inline;
-        background-color: transparent;
-        width: 0px;
-        border: 7px solid transparent;
-        border-left-color:  LightGray;
-        margin: 0px;
-        margin-right: 12px;
-        margin-left: 18px;
-    } */
-    
-    
-    
-    /* ------------Participation Projec----------- */
-    
-    .company::before{
-        content: "";
-        display: inline-block;
-        background-color: transparent;
-        width: 0px;
-        border: 7px solid transparent;
-        border-left-color:  LightGray;
-        margin: 0px;
-        margin-right: 12px;
-        margin-left: 18px;
-    }
-    
-    .company{
-        padding:3px 0;
-        /* line-height: 5px; */
-    }
-    
-    .company a{
-        color:  LightGray;
-    
-    }
-    
-    .company a:hover{
-        text-decoration: underline;
-    
-    }
-    
-    
-    
-    /* .arrow{
-        display: inline;
-        background-color: transparent;
-        width: 0px;
-        border: 10px solid transparent;
-        border-top-color: rgba(139,105,20,0.7);
-        margin: 0px;
-        margin-top: 5px;
-    } */
-    
-    /* ---------------decoration------------------ */
-    .decoration{
-        width: 300px;
-        height: 45px;
-        background: linear-gradient(90deg,rgb(185, 140, 25),LightGray);
-        border-radius: 40px 0 0 40px;
-        position: absolute;
-        right: 0;
-        bottom: 50px;
-    }
-    
-    
-    /* -------------------copyright------------------- */
-    .copyright{
-        font-size: 8px;
-        position: absolute;
-        right: 0px;
-        bottom: 25px;
-    }
-
-
-    .phone_block{
-        display: none;
-    }
-
-}
-
-
 /* 桌面版面:  */
 
 @media only screen and (min-width: 750px) {
@@ -560,7 +146,7 @@ img, object, embed, video {
     
     .resume{
         display: flex;
-        max-width: 550px;
+        max-width: 80%;
         border: solid 7px LightGray;
         border-radius: 5px;
         padding: 45px;
@@ -575,9 +161,9 @@ img, object, embed, video {
     
     .right{
         flex: 5;
-        padding-left: 65px;
+        padding-left: 4%;
         padding-top: 200px;
-        padding-right: 20px;
+        padding-right: 5%;
     }
     
     .left,.right{
@@ -593,26 +179,40 @@ img, object, embed, video {
     }
     
     .listSkill li{
-        width: 50%;
+        width: 51%;
         padding: 5px;
         margin: 0;
         box-sizing: border-box;
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column;
         align-items: center;
-        text-align: center;
+        text-align: center; */
     }
     
-    .circle{
+    .listSkill li::before{
+        content: "";
+        display: inline-block;
+        background-color: transparent;
+        width: 0px;
+        height: 1px;
+        border: 7px solid transparent;
+        border-left-color:  LightGray;
+        margin: 0px;
+        margin-right: 12px;
+        margin-left: 18px;
+        margin-top: 7px;
+    }
+
+    /* .circle{
         width: 50px;
         height: 50px;
         border-radius: 50%;
         position: relative;
         overflow: hidden;
         background-color: rgba(139,105,20,0.7);
-    }
+    } */
     
-    .circle::after{
+    /* .circle::after{
         content: "";
         display: block;
         background-color:rgb(27, 25, 75);
@@ -623,9 +223,9 @@ img, object, embed, video {
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
-    }
+    } */
     
-    .p90,.p180,.p270,.p360{
+    /* .p90,.p180,.p270,.p360{
         width: 50%;
         height: 50%;
         position:absolute;
@@ -642,7 +242,7 @@ img, object, embed, video {
         left: 0px;
         top: 50%;
     }
-    
+     */
     
     /* ------------------list program------------------ */
     .language{
@@ -651,12 +251,12 @@ img, object, embed, video {
     
     
     .listProgram .bar{
-        width: 150px;
-        height: 15px;
+        width: 50%;
+        height: 10px;
         border: solid 2px rgb(185, 140, 25);
         border-radius: 5px;
         padding-right: 65px;
-        margin-left: 15px;
+        margin-left: 15%;
     }
     
     
@@ -723,8 +323,8 @@ img, object, embed, video {
         width: 250px;
         height: 250px;
         position: absolute;
-        right: 85px;
-        top: 35px;
+        right: 3%;
+        top: 2%;
         border: 2px solid rgba(29, 26, 112, 0.877);
         box-shadow: 0 0 5px 5px rgba(29, 26, 112, 0.877);
         border-radius: 50%;
@@ -806,7 +406,7 @@ img, object, embed, video {
     }
 
     .respensibility{
-        margin-left: 125px;
+        margin-left: 60px;
         margin-top: -5px;
     }
     
@@ -824,7 +424,7 @@ img, object, embed, video {
     
     /* ---------------decoration------------------ */
     .decoration{
-        width: 300px;
+        width: 45%;
         height: 50px;
         background: linear-gradient(90deg,rgb(185, 140, 25),LightGray);
         border-radius: 40px 0 0 40px;
@@ -854,6 +454,13 @@ img, object, embed, video {
     .phone_block{
         display: none;
     }
+
+}
+
+
+/* 表格版面: 481px 到 750px。 */
+@media only screen and (min-width: 480px) {
+
 
 }
 
@@ -1067,16 +674,29 @@ img, object, embed, video {
     }
 
     .phone_listSkill li{
-        width: 50%;
+        width: 51%;
         padding: 5px;
         margin: 0;
         box-sizing: border-box;
         display: flex;
-        flex-direction: column; /**/
+        /* flex-direction: column; 
         align-items: center;
-        text-align: center;
+        text-align: center; */
     }
-    
+
+    .phone_listSkill li::before{
+        content: "";
+        display: inline-block;
+        height: 0px;
+        border: 8px solid transparent;
+        background-color: transparent;
+        border-left-color: LightGray;
+        margin-top: 5px;
+        margin-left: 23px;
+        margin-right: 10px;
+        
+    }
+/*     
     .circle{
         width: 50px;
         height: 50px;
@@ -1115,7 +735,7 @@ img, object, embed, video {
     .p270{
         left: 0px;
         top: 50%;
-    }  
+    }   */
 
 /* -------------Participation------------- */
 
@@ -1128,12 +748,22 @@ img, object, embed, video {
         margin-left: -15px;
     }
 
-    .phone_Project li{
+    .phone_Project>li{
         margin-bottom: 10px;
     }
 
+    .phone_Project>li::before{
+        content: "";
+        display: inline-block;
+        height: 0px;
+        border: 8px solid transparent;
+        background-color: transparent;
+        border-left-color: LightGray;
+        margin-right: 10px;
+    }
+
     .phone_respensibility{
-        margin-left: 65px;
+        margin-left: 3%;
     }
 
 
@@ -1151,7 +781,7 @@ img, object, embed, video {
     }
 
     .phone_contact img{
-        vertical-align: middle;
+        vertical-align: top;
         margin-right: 5px;
         margin-bottom: 20px;
 
@@ -1205,6 +835,7 @@ img, object, embed, video {
         bottom: 0px;
         right: 0px;
     }
+}
 
     
     
