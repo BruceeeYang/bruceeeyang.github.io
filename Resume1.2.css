@@ -17,7 +17,7 @@ img, object, embed, video {
   
     body{
         padding: 50px;
-        background-color: rgb(27, 25, 75);
+        background: linear-gradient(rgb(27, 25, 75),#161c69);
         color: LightGray;
         font-size: 15px;
         line-height: 28px;
