@@ -1,8 +1,5 @@
 @charset "utf-8";
-/* 簡單流變媒體
-   注意: 流變媒體要求您必須移除 HTML 中媒體的高度和寬度屬性
-   http://www.alistapart.com/articles/fluid-images/ 
-*/
+
 img, object, embed, video {
 	max-width: 100%;
 }
