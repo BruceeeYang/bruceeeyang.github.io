@@ -31,7 +31,11 @@ img, object, embed, video {
     .name,.jobName{
     
         color: LightGray;;
-        font-weight: 700;
+        font-size: 26px;
+    }
+
+    .block{
+        width: 111%;
     }
     
     .jobName{
@@ -58,7 +62,7 @@ img, object, embed, video {
     }
     
     .nikeName{
-        font-size: 21px;
+        font-size: 17px;
     }
     
     .jobNikename{
@@ -154,13 +158,13 @@ img, object, embed, video {
     }
     
     .left{
-        flex: 5;
+        flex: 1;
         padding-right: 60px ;
         border-right: solid 1px rgb(185, 140, 25);
     }
     
     .right{
-        flex: 5;
+        flex: 1;
         padding-left: 4%;
         padding-top: 200px;
         padding-right: 5%;
@@ -306,7 +310,7 @@ img, object, embed, video {
     
     .contactImg{
         vertical-align: middle;
-        margin-right: 8px;
+        margin-right: 5px;
     }
 
     .contactLink:link{
@@ -614,10 +618,29 @@ img, object, embed, video {
     }
 
     /* -------------Language--------------- */
+    
+    .languageClip{
+        display: flex;
+        width: 100%;
+    }
+
+    .phone_blockLanguage{
+        width: 50%;
+    }
+
+    .phone_blockLanguage_left{
+        flex: 5;
+    }
+
+    .phone_blockLanguage_right{
+        flex: 5;
+    }
+    
     .phone_language{
         font-size: 16px;
         margin-left: 13px;
         margin-bottom: 5px;
+        flex-direction: column;
     }
 
     .phone_englishlanguage{
@@ -628,19 +651,22 @@ img, object, embed, video {
         margin-bottom: 7px;
         font-size: 15px;
         letter-spacing: 1px;
-        margin-left: -12px;
+        margin-left: -24px;
         display: flex;
-        justify-content: space-between;  //
-        align-items: center;  //
+        /* justify-content: space-between;   */
         
     }
 
     .phone_listProgram .phone_bar{
-        width: 65%;
+        width: 70%;
         height: 12px;
         border: 2px solid rgb(185, 140, 25);
         border-radius: 8px;
         margin-top: 5px;
+    }
+
+    .phone_bar{
+        margin-left: 12px;
     }
 
     .phone_bar>.value{
@@ -651,6 +677,10 @@ img, object, embed, video {
         border-radius: 2px 1px 1px 2px;
         box-sizing: border-box;
         margin-left: -1px
+    }
+
+    .phone_bar .phone_p50{
+        width: 60%;
     }
 
     .phone_bar .phone_p60{
@@ -837,6 +867,4 @@ img, object, embed, video {
     }
 }
 
-    
-    
 
